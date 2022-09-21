@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, duplicate_ignore
 
-
 import 'package:flutter/material.dart';
 ////import 'package:flutter/cupertino.dart';
 
@@ -16,10 +15,15 @@ class MyFirstApp extends StatelessWidget {
         ),
         body: Center(
           child: Stack(
+            fit: StackFit.expand,
             children: <Widget>[
               Image(
                 image: AssetImage("assets/images/bg.jfif"),
-              )
+              ),
+              Image.asset(
+                "assets/icons/icon.png",
+                scale: 30,
+              ),
             ],
           ),
         ),
